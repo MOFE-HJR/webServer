@@ -1,0 +1,15 @@
+这是一个基于Linux和c++搭建的web服务器。
+
+使用方法：
+1.在connectpool文件下找到mysql.ini并修改前5个连接信息（注：不要空格）
+	1.1 表格create
+	CREATE TABLE `user` (
+	`id` int NOT NULL AUTO_INCREMENT,
+	`username` varchar(20) NOT NULL,
+	`password` varchar(20) NOT NULL,
+	PRIMARY KEY (`id`)
+	) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3
+
+2.在mofe.cpp同级目录下make，然后./server
+
+3.浏览器打开127.0.0.1:9000/
